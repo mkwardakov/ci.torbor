@@ -36,7 +36,7 @@ RSpec.describe "General Availability test suite" do
 			expect(response.code).to eq "200"
 		end
 		it "Request password reset page" do
-			response = mechAgent.get "#{baseURI}/request-password-reset"
+			response = mechAgent.get "#{baseURI}/site/request-password-reset"
 			expect(response.code).to eq "200"
 		end
 	end
